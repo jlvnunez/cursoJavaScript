@@ -26,7 +26,7 @@ const res = document.getElementById("resultado")
     <p><strong>${nome}</strong> recebeu um aumento salarial!</p>
     <p>O Salario atual era de R$ ${salarioAtual.toFixed(2)}.</p>
     <p>Com o aumento de  ${percentualAumento} %, o salario vai aumentar R$ ${aumento.toFixed(2)} no proximo mês.</p>
-    <p>Doravante, ${nome} vai passar a ganhar R$ ${novoSalario.toFixed(2)}.</p>
+    <p>De agora em diante, ${nome} vai passar a ganhar R$ ${novoSalario.toFixed(2)}.</p>
     ` 
               
 })
