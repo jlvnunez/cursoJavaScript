@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digitar dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Digite seus dados</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" name="" id="nome">
+        <label for="idade">Idade</label>
+        <input type="number" name="" id="idade">
+        <button onclick="mostrar()">Mostrar na tela</button>
+        <button onclick="limpar()"style=background:#f76c6c;>Limpar</button>
+        <p id="resultado"></p>
+    </div>
+    <script>
+        function mostrar(){
+            const nome = document.getElementById("nome").value
+            const idade =document.getElementById("idade").value
+            if(nome.length== "" || idade.length == ""){
+               
+                window.alert('dados invalidos! digite um valor.')
+            }else {
+                document.getElementById("resultado").innerHTML= `Ola!, ${nome}! Voce tem 
+                ${idade}anos.`
+
+            }          
+        }
+        function limpar(){
+                document.getElementById("nome").value=""
+                document.getElementById("idade").value=""
+                document.getElementById("resultado").innerText=""
+            }
+
+        
+    </script>
+</body>
+</html>

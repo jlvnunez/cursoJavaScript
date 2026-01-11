@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media do aluno</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+            body { font: 12pt Arial; }
+            button { font-size: 12pt; padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media do Aluno em JavaScript V1.0</h1>
+    <button onclick="calcula()">Calcular</button>
+    <button onclick="limpar()">Limpar</button>
+    <section id="resultado"><p><strong>Aqui Vai aparecer o resultado...</strong></p></section>
+    
+    <script>
+        let res = document.querySelector("#resultado") //declaracao global
+        function calcula(){
+            let nome = prompt("Digite o Nome do Aluno")
+            let n1 = parseFloat(prompt("Digite Nota 01 "))
+            let n2 = parseFloat(prompt("Digite Nota 02"))    
+            let media = (n1+n2)/2   
+           
+            res.innerHTML =`
+            <p> Calculando a Media Final do Aluno: <mark>${nome}</mark></p>
+            <p> As Notas Obtidas foram:</p>
+            <p> Primeira prova: ${n1}</p>
+            <p> Segunda prova: ${n2}</p>
+            <p> Media final: ${media}</p> `
+
+                 
+            
+        }
+        function limpar(){
+           
+                res.innerHTML=""
+            
+            
+            }
+    </script>
+    
+</body>
+</html>

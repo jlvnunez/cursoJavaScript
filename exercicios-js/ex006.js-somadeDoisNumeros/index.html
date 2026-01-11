@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de 2 numeros V1.0</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+            body { font: 12pt Arial; }
+            button { font-size: 12pt; padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Soma de dois Numeros em JavaScript V1.0</h1>
+    <button onclick="soma()">Calcular</button>
+    <button onclick="limpar()">Limpar</button>
+    <section id="resultado"><p><strong>Aqui Vai aparecer o resultado...</strong></p></section>
+    
+    <script>
+        let res = document.querySelector("#resultado") //declaracao global
+        function soma(){
+            let n1 = parseFloat(prompt("Digite um Numero"))
+            let n2 = parseFloat(prompt("Digite outro Numero"))    
+            let resultado = n1+n2   
+           //let res = document.querySelector("#resultado")//declaracao local 
+            res.innerHTML =`<p> A soma entre o numero<mark> ${n1}</mark>  e o numero  <mark>${n2}</mark> é igua a  <mark>${resultado}</mark>
+            </p> `
+
+            
+        }
+        function limpar(){
+           // let res = document.querySelector("#resultado")//declaracao local
+                res.innerHTML=""
+            
+            
+            }
+    </script>
+    
+</body>
+</html>

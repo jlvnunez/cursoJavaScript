@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Antes e depois</title>
+    <style>
+        body{
+            background: rgba(70, 70, 247, 0.884);
+            color: white;
+            text-align: center;
+        }
+
+        div#resultado{
+            background: white;
+            width: 350px;
+            margin: auto;
+            text-align: center;
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;      
+        }
+
+        button{
+            color: blue;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        label{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Antecessor e sucessor</h2>
+    <label for="digita">Digitar Numero:</label>
+    <button id="btn1">Antes/depois</button>
+    <div id="resultado"></div>
+    <script>
+        const btn = document.getElementById('btn1')
+        const saida = document.getElementById('resultado')
+        
+        btn.addEventListener('click',()=>{
+         saida.innerHTML=""
+            const entrada= prompt('digite um numero inteiro qualquer')
+            if(entrada===""){ alert('valor invalido')
+                return } //usuario cancelou
+             
+            const valor= entrada.trim()
+            const n = Number(valor)
+
+            if(!Number.isFinite(n) || !Number.isInteger(n)){
+                alert('Por Favor,digite um numero inteiro valido!')
+                return
+                
+            }
+            
+            const antecessor = n-1
+            const sucessor = n+1
+           
+            
+            
+            saida.innerHTML=`
+            <p>Resultado: O numero digitado foi<strong> ${n}.</strong> </p>
+            <p> Seu antecessor é: <strong>${antecessor}</strong> e seu sucessor é :<strong>${sucessor}</strong> </p>`
+
+        })
+
+    </script>
+
+
+    
+</body>
+</html>

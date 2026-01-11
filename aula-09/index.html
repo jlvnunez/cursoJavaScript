@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 09 primeiros passos DOM</title>
+    <style>
+        body{
+            background-color: rgb(88, 102, 231);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos Dom </h1>
+    <div id="msg">Clique em Mim!</div>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong> DOM</strong> em JavaScript</p>
+    <!-- <p>Jose Luis aprendendo a usar o <strong>DOM==></strong><br></p> -->
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d = window.document.getElementById('msg')
+       // window.document.write('esta escrito assim! ' + p1.innerText)
+        p1.style.color ='red'
+        d.style.background ='darkred'
+        d.innerHTML ='estou aguardando'
+
+        //corpo.style.background ='gray'
+      // window.document.write('Ola Mundo!')
+        // window.document.write (window.document.URL)
+       // window.document.write(window.navigator.appName)
+      // window.alert(p1.innerHTML)
+       //document.write(p1.innerHTML)
+        
+       
+       
+    </script>
+    
+</body>
+</html>

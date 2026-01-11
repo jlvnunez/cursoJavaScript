@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JavaScript</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+            body { font: 12pt Arial; }
+            button { font-size: 12pt; padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <button onclick="inicio()">Clique Aqui</button>
+    <section id="resultado"><p>Aqui Vai aparecer o resultado...</p></section>
+    
+    <script>
+        function inicio(){
+            let nome = prompt('qual é o seu Nome?')
+            res = document.querySelector("#resultado")
+           
+            res.innerHTML =`<p>Olá , Meu Nome é <strong> ${nome}</strong> . É um Prazer em Conhecer!</p> `
+        }
+    </script>
+    
+</body>
+</html>

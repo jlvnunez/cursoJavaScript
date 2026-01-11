@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varios calculos</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+            body { font: 12pt Arial; }
+            button { font-size: 12pt; padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Varios Calculos em JavaScript V1.0</h1>
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="limpar()">Limpar</button>
+    <section id="resultado"><p><strong>Aqui Vai aparecer o resultado...</strong></p></section>
+    
+    <script>
+         let res = document.querySelector("#resultado") //declaracao global
+       function calcular(){
+        let num = Number(prompt("Digite um Numero"))
+        
+        res.innerHTML=`<p>O Numero a ser analisado aqui será o : <strong>${num}</strong></p>`
+        res.innerHTML +=`<p>O seu valor absoluto é:  <strong>${Math.abs(num)}</strong></p>`  
+        res.innerHTML += `<p>A sua parte inteira é:  <strong>${Math.trunc(num)}</strong></p>`
+        res.innerHTML +=`<p>O valor inteiro mais proximo é: <strong>${Math.round(num)}</strong></p>`
+        res.innerHTML += `<p>A sua raiz Quadrada é: <strong>${Math.sqrt(num)}</strong></p>`
+        res.innerHTML += `<p>A sua raiz cúbica é <strong>${Math.cbrt(num)}</strong></p>` 
+        res.innerHTML += `<p>O valor de ${num}<sup>2</sup> é: <strong>${Math.pow(num, 2)}</strong></p>`
+        res.innerHTML +=`<p>O valor de ${num}<sup>3</sup> é: <strong>${Math.pow(num, 3)}</strong></p>`
+
+       }
+
+        function limpar(){
+           
+                res.innerHTML=""
+            
+            
+            }
+    </script>
+    
+</body>
+</html>

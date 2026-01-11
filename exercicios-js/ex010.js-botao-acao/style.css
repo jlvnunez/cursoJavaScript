@@ -1,0 +1,21 @@
+body{
+            background-color: antiquewhite;
+            color: brown;
+            text-align: center;
+            font: 12pt Arial; 
+             font-style: italic;
+    }
+
+        #resultado{
+           color: brown;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+         button { font-size: 15pt; padding: 30px; 
+            color: brown;
+        }
+
+        

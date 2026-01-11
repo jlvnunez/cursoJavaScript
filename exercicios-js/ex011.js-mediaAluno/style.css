@@ -1,0 +1,33 @@
+body{
+            background-color: antiquewhite;
+            color: brown;
+            text-align: center;
+            font: 12pt Arial; 
+             font-style: italic;
+    }
+
+        #resultado{
+           color: rgba(177, 11, 11, 0.973);
+           background-color: white; 
+           width: 600px;
+           margin: auto;
+           font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+         button { font-size: 15pt; padding: 30px; 
+            color: brown;
+        }
+
+        .erro{
+            /* background-color: red; */
+            width: 500px;
+            text-align: center;
+            margin: auto;
+            
+            
+        }
+
+        

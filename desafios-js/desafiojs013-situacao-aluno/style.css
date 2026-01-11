@@ -1,0 +1,95 @@
+    body{
+    font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #0074D9;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* Área de resultado */
+    #resultado {
+      display: none;/* Começa oculto */
+      font-family: Arial, sans-serif;
+      margin-top: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 400px;
+      margin: 15px auto 0;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    }
+
+    #resultado.visivel { display: block; }
+
+    /* Situações com cores */
+    #resultado.aprovado {
+      background-color: #d4edda;
+      color: #155724;
+      border: 2px solid #155724;
+    }
+    
+
+    #resultado.recuperacao {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 2px solid #856404;
+    }
+
+    #resultado.reprovado {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 2px solid #721c24;
+    }
+
+    .aprovado {
+  background-color: #28a745; /* verde */
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.recuperacao {
+  background-color: #ffc107; /* amarelo */
+  color: black;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.reprovado {
+  background-color: #dc3545; /* vermelho */
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%; /* botões ocupam toda a largura */
+    margin: 8px 0;
+  }
+
+  #resultado {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+
+   
