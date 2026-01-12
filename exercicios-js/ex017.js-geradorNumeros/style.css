@@ -1,0 +1,23 @@
+body{
+            background-color: rgba(0, 0, 253, 0.863);
+            color: white;
+            text-align: center;
+            font: 12pt Arial; 
+             font-style:normal;
+    }
+
+        #resultado{
+           color:white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+         button { font-size: 15pt; padding: 30px; 
+            color:black ;
+            padding: 5px;
+            font-style: normal;
+        }
+
+        
