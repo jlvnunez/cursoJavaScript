@@ -6,7 +6,7 @@ function gerar(){
     let numero = min + Math.trunc(dif * aleatorio) //(ou o Math.floor)
 
     let res = document.querySelector("#resultado")
-    res.innerHTML+=`<p>Acabei de gerar o número <mark>${numero}</mark>!</p>`
+    res.innerHTML+=`<p>Acabei de gerar o número <mark>${numero}</mark></p>`
 
 }
 

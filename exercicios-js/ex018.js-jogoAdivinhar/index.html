@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo advinhar</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="sortear()">
+    
+    <main>
+        <h1>Adivinhe o Número</h1>
+        <div class="controles">
+            <button onclick="jogar()" id ="botao">Palpite</button>
+            <button onclick="limpar()" id = "botaoLimpar">Limpar</button>
+        </div>
+        
+        <section id="resultado">
+            <p><strong>Escolha numeros entre 1 e 100</strong></p>
+        </section>
+        
+    </main>
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
