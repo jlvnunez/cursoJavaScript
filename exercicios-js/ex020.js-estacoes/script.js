@@ -1,7 +1,11 @@
 function iniciar(){
 let dia = parseInt(prompt("Digite um DIA DO MÊS"))
-let mes = prompt("Digite um MÊS DO ANO")
-let res =document.querySelector("#saida")
+let mesEntrada = prompt("Digite um MÊS DO ANO")
+
+if (!mesEntrada) return; // Evita erro se o usuário cancelar o prompt
+    let mes = mesEntrada.toLowerCase().trim();
+
+    let res =document.querySelector("#saida")
 
 let estacao =""
 
@@ -22,5 +26,5 @@ res.innerHTML= `<p>No dia <strong>${dia}</strong> do Mês de <strong>${mes}</str
 
 function limpar(){
     let res = document.querySelector("#saida")
-    res.innerHTML="<strong>Aqui sai o resultado...</strong>"
+    res.innerHTML="<strong>saida de dados...</strong>"
 }
