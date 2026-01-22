@@ -25,8 +25,8 @@ function btnOk() {
                 <div class='ok'>
                     <p><strong>Valores:</strong> a=${a}, b=${b}, c=${c}</p>
                     <p><strong>Δ (delta):</strong> ${delta}</p>
-                    <p><strong>X1:</strong> ${x1.toFixed(2)}</p>
-                    <p><strong>X2:</strong> ${x2.toFixed(2)}</p>
+                    <p><strong>X1:</strong> ${x1}</p>
+                    <p><strong>X2:</strong> ${x2}</p>
                 </div>
             `;
         }
